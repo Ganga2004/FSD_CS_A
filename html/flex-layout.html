@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        background-color: #f0f0f0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid red;
+      }
+
+      .nav {
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid red;
+      }
+
+      .main {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px;
+        padding-bottom: 15vh; /* To avoid overlap with fixed footer */
+      }
+
+      .left {
+        background-color: #e0e0e0;
+        width: 20%;
+        padding: 20px;
+        border: 1px solid red;
+        height: 60vh;
+      }
+
+      .right {
+        background-color: #e0f7fa;
+        width: 75%;
+        padding: 20px;
+        border: 1px solid red;
+        height: 60vh;
+      }
+
+      .footer {
+        background-color: burlywood;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid red;
+        height: 10vh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="nav">Nav</div>
+      <div class="main">
+        <div class="left">Link</div>
+        <div class="right">Home</div>
+      </div>
+    </div>
+    <div class="footer">Footer</div>
+  </body>
+</html>
